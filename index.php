@@ -18,7 +18,25 @@ L'utente potrà sia comprare i prodotti senza registrarsi, oppure iscriversi e r
 Il pagamento avviene con la carta di credito, che non deve essere scaduta.
 BONUS:
 Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibili solo in un periodo particolare (es. da maggio ad agosto).
+
+Classi:
+- Product
+- User
+- Credit card
 */
+
+include_once __DIR__ . '/User.php';
+include_once __DIR__ . '/RegisteredUser.php';
+include_once __DIR__ . '/Product.php';
+include_once __DIR__ . '/CreditCard.php';
+
+$user1 = new User();
+$user2 = new RegisteredUser();
+
+echo "<pre>";
+var_dump($user1);
+var_dump($user2);
+
 
 ?>
     
