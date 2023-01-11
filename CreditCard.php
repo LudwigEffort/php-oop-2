@@ -13,4 +13,3 @@ class CreditCard {
     }
 }
 
-$creditCard1 = new CreditCard('1234567890', 542, '10/25');

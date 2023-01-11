@@ -25,6 +25,7 @@ Classi:
 - Credit card
 */
 
+include_once __DIR__ . '/traits/ProductSeason.php';
 include_once __DIR__ . '/User.php';
 include_once __DIR__ . '/RegisteredUser.php';
 include_once __DIR__ . '/Product.php';
@@ -32,11 +33,15 @@ include_once __DIR__ . '/CreditCard.php';
 
 $user1 = new User();
 $user2 = new RegisteredUser();
+$creditCard1 = new CreditCard('1234567890', 542, '10/25');
+$mangime = new Product();
 
 echo "<pre>";
 var_dump($user1);
 var_dump($user2);
+var_dump($creditCard1);
 
+$mangime->getStatus();
 
 ?>
     
